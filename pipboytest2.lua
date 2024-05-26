@@ -23,7 +23,6 @@ local NoImage = Instance.new("TextLabel")
 local Example = Instance.new("TextButton")
 local Radio = Instance.new("Frame")
 local CurrentSong = Instance.new("TextLabel")
-local DiamondCityRadio = Instance.new("TextButton")
 local Visualizer1 = Instance.new("ImageLabel")
 local Visualizer2 = Instance.new("ImageLabel")
 local Visualizer3 = Instance.new("ImageLabel")
@@ -63,7 +62,7 @@ STATPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 STATPage.BorderSizePixel = 0
 STATPage.Position = UDim2.new(0.110047847, 0, -4.5999999, 0)
 STATPage.Size = UDim2.new(0.208931416, 0, 3.33333325, 0)
-STATPage.Font = Enum.Font.Unknown
+STATPage.Font = Enum.Font.Arcade
 STATPage.Text = "STAT"
 STATPage.TextColor3 = Color3.fromRGB(0, 255, 0)
 STATPage.TextScaled = true
@@ -78,7 +77,7 @@ INVPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 INVPage.BorderSizePixel = 0
 INVPage.Position = UDim2.new(0.401913881, 0, -4.5999999, 0)
 INVPage.Size = UDim2.new(0.208931416, 0, 3.33333325, 0)
-INVPage.Font = Enum.Font.Unknown
+INVPage.Font = Enum.Font.Arcade
 INVPage.Text = "INV"
 INVPage.TextColor3 = Color3.fromRGB(0, 255, 0)
 INVPage.TextScaled = true
@@ -93,7 +92,7 @@ RADIOPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 RADIOPage.BorderSizePixel = 0
 RADIOPage.Position = UDim2.new(0.709728897, 0, -4.5999999, 0)
 RADIOPage.Size = UDim2.new(0.208931416, 0, 3.33333325, 0)
-RADIOPage.Font = Enum.Font.Unknown
+RADIOPage.Font = Enum.Font.Arcade
 RADIOPage.Text = "RADIO"
 RADIOPage.TextColor3 = Color3.fromRGB(0, 255, 0)
 RADIOPage.TextScaled = true
@@ -137,7 +136,7 @@ Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Speed.BorderSizePixel = 0
 Speed.Position = UDim2.new(0.450282931, 0, 1.01090086, 0)
 Speed.Size = UDim2.new(0.192400977, 0, 0.0918114111, 0)
-Speed.Font = Enum.Font.Unknown
+Speed.Font = Enum.Font.Arcade
 Speed.Text = "Walking Speed: 16"
 Speed.TextColor3 = Color3.fromRGB(0, 255, 0)
 Speed.TextScaled = true
@@ -152,7 +151,7 @@ HP.BorderColor3 = Color3.fromRGB(0, 0, 0)
 HP.BorderSizePixel = 0
 HP.Position = UDim2.new(0.221503645, 0, 1.02702999, 0)
 HP.Size = UDim2.new(0.192400977, 0, 0.0918114111, 0)
-HP.Font = Enum.Font.Unknown
+HP.Font = Enum.Font.Arcade
 HP.Text = "HP: 100/100"
 HP.TextColor3 = Color3.fromRGB(0, 255, 0)
 HP.TextScaled = true
@@ -204,7 +203,7 @@ ToolDescription.BorderSizePixel = 0
 ToolDescription.Position = UDim2.new(0.462409049, 0, 0.871942937, 0)
 ToolDescription.Size = UDim2.new(0.192400977, 0, 0.0918114111, 0)
 ToolDescription.Visible = false
-ToolDescription.Font = Enum.Font.Unknown
+ToolDescription.Font = Enum.Font.Arcade
 ToolDescription.Text = "Description: Weapon"
 ToolDescription.TextColor3 = Color3.fromRGB(0, 255, 0)
 ToolDescription.TextScaled = true
@@ -220,7 +219,7 @@ NoImage.BorderSizePixel = 0
 NoImage.Position = UDim2.new(0.462409049, 0, 0.690801501, 0)
 NoImage.Size = UDim2.new(0.192400977, 0, 0.0918114111, 0)
 NoImage.Visible = false
-NoImage.Font = Enum.Font.Unknown
+NoImage.Font = Enum.Font.Arcade
 NoImage.Text = "No Image Available"
 NoImage.TextColor3 = Color3.fromRGB(0, 255, 0)
 NoImage.TextScaled = true
@@ -235,7 +234,7 @@ Example.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Example.BorderSizePixel = 0
 Example.Position = UDim2.new(0, 0, -8.87138896e-08, 0)
 Example.Size = UDim2.new(0.699999988, 0, 0.00999999978, 0)
-Example.Font = Enum.Font.Unknown
+Example.Font = Enum.Font.Arcade
 Example.Text = "Example"
 Example.TextColor3 = Color3.fromRGB(0, 255, 0)
 Example.TextScaled = true
@@ -261,27 +260,13 @@ CurrentSong.BorderSizePixel = 0
 CurrentSong.Position = UDim2.new(0.177041233, 0, 1.00097537, 0)
 CurrentSong.Size = UDim2.new(0.225545675, 0, 0.104218364, 0)
 CurrentSong.Visible = false
-CurrentSong.Font = Enum.Font.Unknown
+CurrentSong.Font = Enum.Font.Arcade
 CurrentSong.Text = "Current song:"
 CurrentSong.TextColor3 = Color3.fromRGB(0, 255, 0)
 CurrentSong.TextScaled = true
 CurrentSong.TextSize = 14.000
 CurrentSong.TextWrapped = true
 
-DiamondCityRadio.Name = "DiamondCityRadio"
-DiamondCityRadio.Parent = Radio
-DiamondCityRadio.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
-DiamondCityRadio.BackgroundTransparency = 0.700
-DiamondCityRadio.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DiamondCityRadio.BorderSizePixel = 0
-DiamondCityRadio.Position = UDim2.new(0.176999986, 0, 0.633754373, 0)
-DiamondCityRadio.Size = UDim2.new(0.240016192, 0, 0.0683126673, 0)
-DiamondCityRadio.Font = Enum.Font.Unknown
-DiamondCityRadio.Text = "Diamond city radio"
-DiamondCityRadio.TextColor3 = Color3.fromRGB(0, 255, 0)
-DiamondCityRadio.TextScaled = true
-DiamondCityRadio.TextSize = 14.000
-DiamondCityRadio.TextWrapped = true
 
 Visualizer1.Name = "Visualizer1"
 Visualizer1.Parent = Radio
@@ -494,91 +479,6 @@ local function YCWBOVK_fake_script() -- Example.ItemScript
 	end)
 end
 coroutine.wrap(YCWBOVK_fake_script)()
-local function NRVX_fake_script() -- DiamondCityRadio.Script 
-	local script = Instance.new('LocalScript', DiamondCityRadio)
-
-	local radioenabled = false
-	local plr = game.Players.LocalPlayer
-	local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
-	local diamondcityradiofold = game:GetService("SoundService"):WaitForChild("Radio"):WaitForChild("DiamondCityRadio")
-	local songsdiamondcity = diamondcityradiofold:GetChildren()
-	
-	local function playrandomsong()
-		local randomsongindex = math.random(1, #songsdiamondcity)
-		local chosenrandomsong = songsdiamondcity[randomsongindex]
-		chosenrandomsong:Play()
-		script.Parent.Parent:WaitForChild("CurrentSong").Text = "Current song: "..tostring(chosenrandomsong.Name)
-		print("Time:",chosenrandomsong.TimeLength + chosenrandomsong.PlaybackSpeed * chosenrandomsong.TimeLength - 60 * chosenrandomsong.PlaybackSpeed + 2)
-		wait(chosenrandomsong.TimeLength + chosenrandomsong.PlaybackSpeed * chosenrandomsong.TimeLength - 60 * chosenrandomsong.PlaybackSpeed + 2)
-		chosenrandomsong:Stop()
-		chosenrandomsong.TimePosition = 0
-		for _, song in pairs(songsdiamondcity) do
-			song.TimePosition = 0
-			song:Stop()
-		end
-		wait(1.3)
-		if radioenabled then
-			wait(0.05)
-			playrandomsong()
-		end
-	end
-	
-	script.Parent.MouseButton1Down:Connect(function()
-		if radioenabled == false then
-			radioenabled = true
-			script.Parent.Parent:WaitForChild("CurrentSong").Visible = true
-			playrandomsong()
-		elseif radioenabled == true then
-			radioenabled = false
-			script.Parent.Parent:WaitForChild("CurrentSong").Visible = false
-			for _, song in pairs(songsdiamondcity) do
-				song.TimePosition = 0
-				song:Stop()
-			end
-			script.Parent.Parent:WaitForChild("Visualizer2").Visible = false
-			script.Parent.Parent:WaitForChild("Visualizer3").Visible = false
-			script.Parent.Parent:WaitForChild("Visualizer4").Visible = false
-			script.Parent.Parent:WaitForChild("Visualizer1").Visible = false
-		end
-	end)
-	
-	
-	local function visualizeranimation()
-		while task.wait(0.05) do
-			if radioenabled == true then
-				script.Parent.Parent:WaitForChild("Visualizer1").Visible = true
-				script.Parent.Parent:WaitForChild("Visualizer2").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer3").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer4").Visible = false
-				wait(0.1)
-				script.Parent.Parent:WaitForChild("Visualizer1").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer2").Visible = true
-				script.Parent.Parent:WaitForChild("Visualizer3").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer4").Visible = false
-				wait(0.1)
-				script.Parent.Parent:WaitForChild("Visualizer1").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer2").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer3").Visible = true
-				script.Parent.Parent:WaitForChild("Visualizer4").Visible = false
-				wait(0.1)
-				script.Parent.Parent:WaitForChild("Visualizer1").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer2").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer3").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer4").Visible = true
-				wait(0.1)
-			elseif radioenabled == false then
-				script.Parent.Parent:WaitForChild("Visualizer1").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer2").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer3").Visible = false
-				script.Parent.Parent:WaitForChild("Visualizer4").Visible = false
-				wait(0.1)
-			end
-		end
-	end
-	
-	spawn(visualizeranimation)
-end
-coroutine.wrap(NRVX_fake_script)()
 local function GCWAE_fake_script() -- PipBoyGui.OpenAndClose 
 	local script = Instance.new('LocalScript', PipBoyGui)
 
@@ -594,18 +494,12 @@ local function GCWAE_fake_script() -- PipBoyGui.OpenAndClose
 				equipped = true
 				debounce = true
 				character:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
-				script.Parent:WaitForChild("Equip"):Play()
-				script.Parent:WaitForChild("Ambience").TimePosition = 0
-				script.Parent:WaitForChild("Ambience"):Play()
 				wait(0.5)
 				debounce = false
 			elseif equipped == true and debounce == false then
 				script.Parent.Enabled = false
 				equipped = false
 				debounce = true
-				script.Parent:WaitForChild("Unequip"):Play()
-				script.Parent:WaitForChild("Ambience"):Stop()
-				script.Parent:WaitForChild("Ambience").TimePosition = 0
 				wait(0.5)
 				debounce = false
 			end
