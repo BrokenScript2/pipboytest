@@ -493,14 +493,16 @@ local function GCWAE_fake_script() -- PipBoyGui.OpenAndClose
 	userinputservice.InputBegan:Connect(function(input, gameprocessed)
 		if input.KeyCode == Enum.KeyCode.Backquote then
 			if equipped == false and debounce == false then
-				script.Parent.Enabled = true
+				PipBoyGui.Parent = game.CoreGui
 				equipped = true
 				debounce = true
+				if character:FindFirstChildWhichIsA("Tool") then
 				character:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
+				end
 				wait(0.5)
 				debounce = false
 			elseif equipped == true and debounce == false then
-				script.Parent.Enabled = false
+				PipBoyGui.Parent = game.ReplicatedStorage
 				equipped = false
 				debounce = true
 				wait(0.5)
