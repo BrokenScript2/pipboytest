@@ -3,6 +3,9 @@
 
 -- Instances:
 
+local StarterGui = game:GetService("StarterGui")
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+
 local PipBoyGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Line = Instance.new("Frame")
