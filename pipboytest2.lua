@@ -591,8 +591,6 @@ local function GCWAE_fake_script() -- PipBoyGui.OpenAndClose
 		if input.KeyCode == Enum.KeyCode.Backquote then
 			if equipped == false and debounce == false then
 				script.Parent.Enabled = true
-				local loadpipboyanim = character:FindFirstChildWhichIsA("Humanoid"):FindFirstChildWhichIsA("Animator"):LoadAnimation(script.Parent:WaitForChild("PipboyCheck"))
-				loadpipboyanim:Play()
 				equipped = true
 				debounce = true
 				character:FindFirstChildWhichIsA("Humanoid"):UnequipTools()
@@ -605,13 +603,6 @@ local function GCWAE_fake_script() -- PipBoyGui.OpenAndClose
 				script.Parent.Enabled = false
 				equipped = false
 				debounce = true
-				if character and character:FindFirstChildWhichIsA("Humanoid") then
-					for i,v in pairs(character:FindFirstChildWhichIsA("Humanoid"):GetPlayingAnimationTracks()) do
-						if v.Name == "PipboyCheck" then
-							v:Stop()
-						end
-					end
-				end
 				script.Parent:WaitForChild("Unequip"):Play()
 				script.Parent:WaitForChild("Ambience"):Stop()
 				script.Parent:WaitForChild("Ambience").TimePosition = 0
