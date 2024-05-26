@@ -493,7 +493,15 @@ local function GCWAE_fake_script() -- PipBoyGui.OpenAndClose
 	userinputservice.InputBegan:Connect(function(input, gameprocessed)
 		if input.KeyCode == Enum.KeyCode.Backquote then
 			if equipped == false and debounce == false then
-				PipBoyGui.Parent = game.CoreGui
+				for _, thing in pairs(PipBoyGui:GetChildren()) do
+				if thing:IsA("Frame") or thing:IsA("ScrollingFrame") or thing:IsA("TextLabel") or thing:IsA("ImageLabel") or thing:IsA("TextButton") then
+				thing.Visible = true
+				end
+				for _, page in pairs(script.Parent.Parent.Parent:WaitForChild("Pages"):GetChildren()) do
+			        page.Visible = false
+				script.Parent.Parent.Parent:WaitForChild("Pages"):WaitForChild("Stat").Visible = true
+		                end
+		script.Parent.Parent.Parent:WaitForChild("Pages"):WaitForChild("Stat").Visible = true
 				equipped = true
 				debounce = true
 				if character:FindFirstChildWhichIsA("Tool") then
@@ -502,7 +510,9 @@ local function GCWAE_fake_script() -- PipBoyGui.OpenAndClose
 				wait(0.5)
 				debounce = false
 			elseif equipped == true and debounce == false then
-				PipBoyGui.Parent = game.ReplicatedStorage
+				if thing:IsA("Frame") or thing:IsA("ScrollingFrame") or thing:IsA("TextLabel") or thing:IsA("ImageLabel") or thing:IsA("TextButton") then
+				thing.Visible = false
+				end
 				equipped = false
 				debounce = true
 				wait(0.5)
